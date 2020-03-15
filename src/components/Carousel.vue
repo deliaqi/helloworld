@@ -31,8 +31,8 @@
 <style>
   .carousel-home{
     height: 500px;
-    margin-top: 100px;
-    border: 1px solid #ddd;
+    margin-top: 120px;
+    /*border: 1px solid #ddd;*/
   }
   .carousel-home.el-carousel-item{
 
