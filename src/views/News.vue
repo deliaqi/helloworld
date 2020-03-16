@@ -1,5 +1,5 @@
 <template>
-  <div class="course">
+  <div class="news">
 <!--     <el-container>
       <el-header>
         <Header></Header>
@@ -10,18 +10,18 @@
     </el-container> -->
     
     <Header></Header>
-    <CourseInfo></CourseInfo>
+    <NewsInfo></NewsInfo>
   </div>
 </template>
 
 <script>
   import Header from '../components/Head';
-  import CourseInfo from '../components/CourseInfo';
+  import NewsInfo from '../components/NewsInfo';
   import Login from '../components/Login';
 
   export default {
     components: {
-      Header, Login, CourseInfo,
+      Header, Login, NewsInfo,
     },
   };
 

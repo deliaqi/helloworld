@@ -2,10 +2,10 @@
 <template>
 <div class="header">
   <el-row class="container">
-    <el-col :span = "10" class="logo" >
-      <div class="logo"><img src=../assets/moleqode.png height="28%" width="28%"></div>
+    <el-col :span = "8" class="logo" >
+      <div class="logo"><img src=../assets/moleqode.png height="40%" width="40%"></div>
     </el-col>
-    <el-col :span="10" class="menu">
+    <el-col :span="8" class="menu">
       <el-menu 
         :default-active="activeIndex" 
         class="el-menu-demo" 
@@ -22,7 +22,7 @@
           </el-submenu> -->
         </el-menu>
     </el-col>
-    <el-col :span="2" class="wechat">
+    <el-col :span="4" class="wechat">
       <el-popover
         placement="bottom-start"
         title=""
@@ -53,6 +53,9 @@ export default {
     toCourse() {
       this.$router.push({ path: '/course' });
     },
+    toNews() {
+      this.$router.push({ path: '/news' });
+    },
   },
 };
 </script>
@@ -63,17 +66,19 @@ export default {
     top: 0px;
     width: 100%;
     padding-top:10px; /*inside*/
-    padding-bottom:20px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-right:50px;
+/*    margin-left: 0px;
+    margin-right: 0px;*/
     border-bottom: 1px solid #ddd;
+    box-shadow: 1px 2px 0px #ebf1f2;
     /*display: flex;*/
     /*justify-content: space-between;*/
-    height: 60px;
+    /*height: 60px;*/
     /*font-size: 20px !important;*/
     /*font-size: xx-large;*/
-    /*background-color: #e5e9f2;*/
-
+    /*background-color: #edfafc;*/
+    background-color: white;
+    z-index: 999;
   }
 
 /*  .el-menu--horizontal .el-menu .el-menu-item {
@@ -85,19 +90,20 @@ export default {
   }*/
 
   .logo {
+    float: left;
     /*background-color: #545c64;*/
     /*margin-left: 50px;*/
     /*border: 1px solid #ddd;*/
   }
 
   .menu{
-    float: left;
+    float: center;
     /*margin-right: 100px;*/
     margin-top: 20px;
   }
 
   .wechat{
-    float: left;
+    float: center;
     margin-right: 100px;
     margin-top: 30px;
   }

@@ -3,6 +3,7 @@ import Router from 'vue-router'
 // import HelloWorld from '@/components/HelloWorld'
 import Home from '@/views/Home'
 import Course from '@/views/Course'
+import News from '@/views/News'
 
 Vue.use(Router)
 
@@ -16,6 +17,10 @@ export default new Router({
       path: '/course',
       name: 'Course',
       component: Course,
+    }, {
+      path: '/news',
+      name: 'News',
+      component: News,
     },
   ]
 })

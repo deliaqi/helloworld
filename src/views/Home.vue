@@ -4,6 +4,9 @@
     <Header></Header>
     <!-- 轮播组件 -->
     <Carousel></Carousel>
+    <!-- <NewsInfo></NewsInfo> -->
+
+    <!-- <Footer></Footer> -->
 
     <!--<div class="head_home">-->
       <!--<div class="head_center">-->
@@ -20,10 +23,12 @@
   import Header from '../components/Head';
   import Carousel from '../components/Carousel';
   import Login from '../components/Login';
+  import Footer from '../components/Footer';
+  import NewsInfo from '../components/NewsInfo';
 
   export default {
     components: {
-      Header, Login, Carousel,
+      Header, Login, Carousel, Footer,NewsInfo,
     },
   };
 

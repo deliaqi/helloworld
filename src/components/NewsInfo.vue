@@ -1,14 +1,14 @@
 <template>
-  <div class="course-info">
-    <img style="border: 1px solid #ddd" src='../assets/img/course1.jpeg' width="100%" height="100%">
-    <img style="border: 1px solid #ddd" src='../assets/img/course2.jpeg' width="100%" height="100%">
+  <div class="news-info">
+    <img style="border: 1px solid #ddd" src='../assets/img/news1.jpeg' width="100%" height="100%">
+    <img style="border: 1px solid #ddd" src='../assets/img/news2.jpeg' width="100%" height="100%">
     <div><img style="margin-top: 20px; margin-bottom: 30px" src=../assets/footer.png height="50%" width="50%"></div>
   </div>
 </template>
 
 <script>
   export default {
-    name: 'Course',
+    name: 'NewsInfo',
   };
 
 </script>
@@ -16,7 +16,7 @@
 
 
 <style>
-  .course-info{
+  .news-info{
     position: relative;
     margin-top: 120px;
     margin-left: 100px;
